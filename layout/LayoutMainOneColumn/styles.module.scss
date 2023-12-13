@@ -1,0 +1,15 @@
+.fullHeight {
+  height: 100% !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.borderLeft {
+  border-left: thin solid $border-color;
+}
+
+/* dark overrides */
+.darkMode {
+  .borderLeft {
+    border-color: $dark-border-color;
+  }
+}
