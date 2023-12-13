@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.noneFound {
+  color: $gray-700;
+  padding-left: 10px;
+}
+
+/* dark overrides */
+.darkMode {
+  .noneFound {
+    color: $dark-gray-400;
+  }
+}
