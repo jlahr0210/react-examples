@@ -1,0 +1,84 @@
+.red-e-text-input {
+  & ::placeholder {
+    letter-spacing: 0px !important;
+  }
+  &-primary {
+    border-radius: 5px !important;
+    background-color: $redeappwhite !important;
+    color: $redeappred !important;
+  }
+  &-secondary {
+    background-color: $gray-100 !important;
+    color: $redeappwhite !important;
+  }
+
+  &-transparent {
+    background-color: transparent !important;
+    .MuiOutlinedInput-notchedOutline {
+      border: none !important;
+    }
+  }
+
+  &-rounded {
+    background-color: $gray-100 !important;
+    color: $gray-700 !important;
+    border-radius: 23px !important;
+
+    &-disabled {
+      background-color: darken($gray-100, 20%) !important;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border: none !important;
+    }
+  }
+
+  &-form {
+    background-color: $redeappwhite !important;
+    padding: 0px !important;
+    border-radius: 10px !important;
+
+    .MuiInputBase-root {
+      padding: 0px 5px !important;
+    }
+    .MuiInputBase-input {
+      color: $gray-700 !important;
+    }
+    .MuiOutlinedInput-notchedOutline {
+      border: thin solid $border-color !important;
+      border-radius: 10px !important;
+    }
+  }
+}
+.warning {
+  font-size: $xsmall;
+  color: $redeappred;
+  font-style: italic;
+}
+
+/* dark mode overrides */
+.red-e-text-input-primary-dark {
+  background-color: $dark-gray-600 !important;
+  .MuiInputBase-input {
+    color: $dark-gray-100 !important;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border: thin solid $dark-gray-600 !important;
+  }
+}
+.red-e-text-input-form-dark {
+  background-color: $dark-gray-600 !important;
+  .MuiInputBase-input {
+    color: $dark-gray-100 !important;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border: thin solid $dark-gray-600 !important;
+  }
+}
+
+.red-e-text-input-rounded-dark {
+  background-color: $dark-gray-600 !important;
+  .MuiInputBase-input {
+    color: $dark-gray-100 !important;
+  }
+}
