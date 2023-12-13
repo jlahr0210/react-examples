@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px;
+  display: flex;
+  color: $gray-700;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.name {
+  font-size: $normal;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.job {
+  font-size: $small;
+}
+
+/* dark overrides */
+.darkMode {
+  color: $dark-gray-400;
+}
