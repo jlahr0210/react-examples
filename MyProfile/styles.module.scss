@@ -1,0 +1,65 @@
+.container {
+  width: 70%;
+  background-color: $redeappwhite;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.content {
+  padding: 10px;
+}
+.header {
+  padding-bottom: 10px;
+}
+.body {
+  padding-bottom: 10px;
+}
+.fieldContainer {
+  padding: 10px;
+}
+.fieldLabel {
+  font-size: $small;
+  color: $gray-500;
+  padding: 5px 0px;
+}
+.bioInput {
+  width: 100%;
+  height: 60px !important;
+  border-radius: 8px;
+  color: $gray-700;
+  background: #fff;
+  border: 1px solid $gray-200;
+  &:focus-visible {
+    outline: 0;
+  }
+}
+
+.actionItems {
+  padding-top: 5px;
+  display: flex;
+}
+
+.trashCan {
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* dark overrides */
+.darkMode {
+  background-color: $dark-gray-900 !important;
+  .fieldLabel {
+    color: $dark-gray-400;
+  }
+  .bioInput {
+    background-color: $dark-gray-600;
+    color: $dark-gray-200;
+    border: none;
+  }
+  .changeButton {
+    &:hover {
+      background-color: $dark-gray-700 !important;
+    }
+  }
+}
