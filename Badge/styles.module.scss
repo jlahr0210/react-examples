@@ -1,0 +1,32 @@
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: $redeappred;
+  border-radius: 20px;
+  color: $redeappwhite;
+  font-size: $small;
+}
+
+.count {
+  padding: 2px 5px;
+  width: unset;
+  height: unset;
+  background-color: $redeappwhite !important;
+  color: $gray-700 !important;
+  border: 2px solid $border-color !important;
+  border-radius: 11px !important;
+  font-weight: bold;
+  font-size: $small;
+}
+
+.small {
+  width: 12px !important;
+  height: 12px !important;
+  padding: 3px;
+  border-radius: 10px;
+  font-size: $xsmall;
+}
