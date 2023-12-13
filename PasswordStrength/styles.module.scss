@@ -1,0 +1,27 @@
+.passwordStrengthContainer {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.passwordStrengthBox {
+  box-sizing: border-box;
+  width: 25%;
+  height: 10px;
+  border-radius: 0px;
+}
+
+.suggestions {
+  padding-top: 10px;
+  font-size: $small;
+  color: $gray-500;
+}
+
+/* dark mode overrides */
+.darkMode {
+  .suggestions {
+    color: $redeappblack;
+  }
+}
