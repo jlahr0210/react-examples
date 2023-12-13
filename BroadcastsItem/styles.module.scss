@@ -1,0 +1,83 @@
+.broadcast {
+  font-size: $small;
+  width: 100%;
+  box-sizing: border-box;
+  color: $gray-700;
+  border-bottom: 1px solid #e2e8f0;
+  cursor: pointer;
+  padding: 7px;
+}
+.subject {
+  color: $gray-700;
+  width: 100%;
+  padding-top: 3px;
+}
+
+.row {
+  display: inline-flex;
+  width: 100%;
+}
+
+.participants {
+  font-size: $normal;
+  width: 100%;
+  @include noWrapEllipsis;
+}
+
+.time {
+  width: 30%;
+  font-size: $xsmall;
+  display: inline-flex;
+  color: $gray-500;
+  height: 14px;
+  align-items: center;
+  justify-content: end;
+  padding-top: 2px;
+}
+
+.message {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bolderText {
+  font-weight: bold;
+}
+
+.selected {
+  background-color: $gray-100;
+}
+
+.body {
+  padding-top: 8px;
+  text-overflow: ellipsis;
+}
+
+.body {
+  @include HTMLbody;
+}
+.noRecipients {
+  color: $gray-500;
+  font-style: italic;
+  font-size: $small;
+}
+/* dark overrides */
+.darkMode {
+  .broadcast {
+    color: $dark-gray-400;
+    border-color: $dark-gray-600;
+  }
+  .time {
+    color: $dark-gray-400;
+  }
+  .selected {
+    background-color: $dark-gray-800;
+  }
+  .subject {
+    color: $dark-gray-400;
+  }
+  .noRecipients {
+    color: $dark-gray-500;
+  }
+}
