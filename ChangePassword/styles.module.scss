@@ -1,0 +1,40 @@
+.container {
+  width: 60%;
+  background-color: $redeappwhite;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.content {
+  padding: 10px;
+}
+
+.header {
+  padding-bottom: 10px;
+}
+.body {
+  padding-bottom: 10px;
+}
+.fieldContainer {
+  padding: 10px;
+}
+.fieldLabel {
+  font-size: $small;
+  color: $gray-500;
+  padding: 5px 0px;
+}
+.error {
+  @include errorText;
+}
+
+/* dark overrides */
+.darkMode {
+  background-color: $dark-gray-900 !important;
+  .fieldLabel {
+    color: $dark-gray-400;
+  }
+  .updateButton {
+    &:hover {
+      background-color: $dark-gray-700 !important;
+    }
+  }
+}
