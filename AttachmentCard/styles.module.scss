@@ -1,0 +1,60 @@
+.container {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  border: thin $gray-200 solid;
+  padding: 3px;
+  border-radius: 5px;
+  color: $gray-700;
+  min-width: 150px;
+}
+
+.remove {
+  font-size: $small;
+  color: $redeappred;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+}
+
+.name {
+  font-size: $small;
+  font-weight: bold;
+  color: $gray-700;
+  padding: 3px 0px;
+  box-sizing: border-box;
+  @include noWrapEllipsis;
+}
+
+.size {
+  font-size: $xsmall;
+  color: $gray-500;
+}
+
+.type {
+  font-size: $small;
+  color: $gray-500;
+}
+
+.column {
+  padding: 3px;
+  width: 25%;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+/* dark overrides */
+.darkMode {
+  background-color: $dark-gray-900;
+  .name {
+    color: $dark-gray-200;
+  }
+  .size {
+    color: $dark-gray-400;
+  }
+  .type {
+    color: $dark-gray-400;
+  }
+}
